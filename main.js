@@ -11,7 +11,7 @@ const windSpeed = document.querySelector(".wind-speed");
 
 
 searchInput.addEventListener("change",(e)=>{
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${e.target.value}&appid=2e5d4d165e38b4c070bab5cd91030be6&units=metric&lang=ja`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${e.target.value}&appid=2e5d4d165e38b4c070bab5cd91030be6&units=metric&lang=ja`)
     .then(async res => {
         const data = await res.json();
         console.log('[Search Input]',data);
