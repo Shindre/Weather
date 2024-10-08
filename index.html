@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://icons.veryicon.com/png/o/miscellaneous/color-icon-library/sun-cloud-1.png">
+
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="search-cities">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="都市を検索してください" class="search-input">
+            </div>
+
+            <div class="info-wrap">
+                <div class="city-name">都市</div>
+                <p class="weather-status"></p>
+                <img src="https://openweathermap.org/img/wn/09d@2x.png" alt="weather-icon" class="weather-icon">
+                <p class="temperature">--</p>
+            </div>
+        </div>
+
+        <div class="desc-content">
+            <div class="row">
+                <div class="item">
+                    <div class="label">日の出</div>
+                    <div class="value sunrise">--:--</div>
+                </div>
+
+                <div class="item">
+                    <div class="label">夕日</div>
+                    <div class="value sunset">--:--</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                    <div class="label">湿度</div>
+                    <div class="value"><span class="humidity">--</span>%</div>
+                </div>
+
+                <div class="item">
+                    <div class="label">風</div>
+                    <div class="value"><span class="wind-speed">-</span>km/h</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+    <script src="./moment.js"></script>
+</body>
+</html>
